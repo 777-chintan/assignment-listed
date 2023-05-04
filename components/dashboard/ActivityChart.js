@@ -1,3 +1,4 @@
+import { Icon } from "@iconify/react";
 import dynamic from "next/dynamic";
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
@@ -46,7 +47,10 @@ export default function ActivityChart({
       <div>
         <h2 className="font-bold text-lg -mb-0">{title}</h2>
         {subheader !== "" ? (
-          <h4 className="text-[#858585] font-normal">{subheader}</h4>
+          <h4 className="text-[#858585] font-normal text-xs flex gap-1 items-center cursor-pointer hover:text-[#525252]">
+            {subheader}
+            <Icon icon="material-symbols:expand-more" width={24} />
+          </h4>
         ) : null}
       </div>
 

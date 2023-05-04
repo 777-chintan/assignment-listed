@@ -7,7 +7,7 @@ export const getNavIcon = (icon = "") => {
   if (icon === "") {
     return null;
   }
-  return <Icon icon={icon} width={20} />;
+  return <Icon icon={icon} width={24} />;
 };
 
 const navConfig = [

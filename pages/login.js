@@ -33,7 +33,7 @@ function Login() {
         <div className="col-span-0 hidden md:col-span-6 md:flex flex-row items-center justify-center bg-black">
           <h1 className="text-7xl text-white">Board.</h1>
         </div>
-        <div className="p-4 md:p-8 col-span-12 flex md:col-span-6 flex-col justify-center h-[100%] md:px-28 bg-[#F5F5F5] xl:px-40 gap-2">
+        <div className="p-4 md:p-8 col-span-12 flex md:col-span-6 flex-col justify-center h-[100%] md:px-16 lg:px-24 bg-[#F5F5F5] xl:px-32 gap-2">
           <h2 className="text-4xl font-bold">Sign In</h2>
           <p className="mb-2 mt-1 md:mb-5 md:mt-2 ">Sign in to your account</p>
           <div className="grid grid-cols-12 gap-2 md:gap-6">
@@ -46,10 +46,7 @@ function Login() {
               <Icon icon="logos:google-icon" width={20} />
               Sign in with Google
             </button>
-            <button
-              className="col-span-12 md:col-span-6 rounded-md md:rounded-xl bg-white p-2 text-gray-500 hover:text-gray-700 transition-colors flex gap-2 items-center  px-4 md:px-8"
-              onClick={() => signOut()}
-            >
+            <button className="col-span-12 md:col-span-6 rounded-md md:rounded-xl bg-white p-2 text-gray-500 hover:text-gray-700 transition-colors flex gap-2 items-center  px-4 md:px-8">
               <Icon icon="fa:apple" width={20} />
               Sign in with Apple
             </button>

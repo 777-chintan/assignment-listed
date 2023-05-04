@@ -34,7 +34,7 @@ function Dashboard() {
   }
 
   return (
-    <div className="px-2 md:px-8 lg:px-20 py-6 flex flex-col gap-4 lg:gap-8">
+    <div className="px-2 md:px-8 lg:px-16 py-6 flex flex-col gap-4 lg:gap-8">
       {/* headings */}
       <div className="flex justify-start md:justify-between md:items-center flex-col md:flex-row gap-2">
         <h2 className="font-bold text-2xl">Dashboard</h2>
@@ -177,7 +177,10 @@ function Dashboard() {
         <div className="col-span-2 lg:col-span-1 p-4 bg-white rounded-xl">
           <div className="flex justify-between items-center mb-2">
             <h2 className="font-bold text-lg -mb-0">Today’s schedule</h2>
-            <h4 className="text-[#858585] font-normal text-xs">See All</h4>
+            <h4 className="text-[#858585] font-normal text-xs cursor-pointer flex items-center gap-1 hover:text-[#525252]">
+              See All
+              <Icon icon="material-symbols:expand-more" width={24} rotate={3} />
+            </h4>
           </div>
           <ScheduleItem
             title={"Meeting with suppliers from Kuta Bali"}
