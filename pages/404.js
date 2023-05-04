@@ -1,10 +1,8 @@
 import useTitle from "@/hooks/useTitle";
 import Link from "next/link";
-import { useRouter } from "next/router";
 
-function Page404() {
+function Page() {
   useTitle("404 Page Not Found");
-  const router = useRouter();
 
   return (
     <div className="flex justify-center items-center">
@@ -18,7 +16,7 @@ function Page404() {
         <div className="h-[260px] mx-auto ">
           <img src={"/images/error.jpeg"} className="h-full object-contain" />
         </div>
-        <Link to={"/"}>
+        <Link href={"/"}>
           <button className="no-underline	bg-black rounded-lg px-4 py-2 mt-2 text-white hover:text-gray-300 hover:bg-gray-700">
             Go to Home
           </button>
@@ -28,4 +26,4 @@ function Page404() {
   );
 }
 
-export default Page404;
+export default Page;
