@@ -37,7 +37,7 @@ function Dashboard() {
     <div className="px-2 md:px-8 lg:px-20 py-6 flex flex-col gap-4 lg:gap-8">
       {/* headings */}
       <div className="flex justify-start md:justify-between md:items-center flex-col md:flex-row gap-2">
-        <h2>Dashboard</h2>
+        <h2 className="font-bold text-2xl">Dashboard</h2>
         <div className="flex items-center gap-4">
           <form className="flex items-center">
             <label htmlFor="simple-search" className="sr-only">
@@ -46,7 +46,7 @@ function Dashboard() {
             <div className="relative w-full">
               <input
                 type="text"
-                className="bg-gray-50 border  text-gray-700 text-sm rounded-lg block w-full pr-10 p-2.5  placeholder-gray-400  focus:ring-blue-500 focus:border-blue-500"
+                className="bg-white text-gray-700 text-sm rounded-[10px] block w-full pr-10 p-2.5  placeholder-gray-400 focus:ring focus:ring-blue-500 border-0 outline-none"
                 placeholder="Search"
               />
               <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
